@@ -65,6 +65,16 @@
     </section>
     
   </main>
+  <script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
 
   <footer>
     <p>&copy; 2025 SaxHub. All rights reserved.</p>
