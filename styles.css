@@ -87,3 +87,8 @@ nav ul li.login a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
